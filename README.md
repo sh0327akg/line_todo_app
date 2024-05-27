@@ -1,24 +1,20 @@
-# README
+# LINE TODO APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+以下の手順で環境構築
 
-* How to run the test suite
+1. Dockerfile, compose.ymlをコピー
 
-* Services (job queues, cache servers, search engines, etc.)
+2. 以下のコマンド実行
+```
+docker compose run --rm web gem install rails
+```
 
-* Deployment instructions
-
-* ...
+```
+docker compose run --rm web rails new . -j esbuild
+```
