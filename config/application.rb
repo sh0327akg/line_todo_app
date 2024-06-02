@@ -28,7 +28,9 @@ module App
       g.helper false
       g.test_framework false
       g.skip_routes true
-
     end
+
+    config.time_zone = "Asia/Tokyo"
+    config.active_record.default_timezone = :local
   end
 end
